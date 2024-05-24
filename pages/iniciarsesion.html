@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CaCFLIX | Catagolo de musica</title>
+        <title>CaCFLIX | Catágolo de películas de terror</title>
         <link rel="icon" href="../index.html">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos_inicio.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -40,26 +40,39 @@
             </div>
 
             <nav class="nav_main">
-                    <a href="">
-                        <img src="../assets/img/Vampiro_dientes.png" alt="Logo de CaCFLIX" loading="lazy" class="nav_main_vampire">
-                    </a>   
-                <div class="nav_menu_right" id="myNavMain">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
-                    <a href="../index.html">Inicio</a>
-                    <a href="../pages/tendencias.html" class="burgertime">Tendencias</a>
-                    <a href="../pages/registrase.html" class="burgertime">Registrarse</a>
-                    <a href="#" class="burgertime">Iniciar sesion</a>
-                </div>
-            </nav>
-        </header>
+                <a href="../index.html">
+                    <img src="../assets/img/Vampiro_dientes.png" alt="Logo de CaCFLIX" loading="lazy" class="nav_main_vampire">
+                </a>   
+            <div class="nav_menu_right" id="myNavMain">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/tendencias.html" class="burgertime">Tendencias</a>
+                <a href="../pages/registrase.html" class="burgertime">Registrarse</a>
+                <a href="../pages/iniciarsesion.html" class="burgertime">Iniciar sesion</a>
+            </div>
+        </nav>
+    </header>
 
-        <main> 
-            <section class="contenedor">
-                <h1>Una entrada al mundo más oscuro del séptimo arte</h1>
-                <p>Todo el mundo tiene miedo a algo, pueden ser arañas, serpientes o alturas, o algo menos tangible, como la muerte, el fracaso o lo desconocido.
-                    Pero en el fondo, incluso el tipo más duro alberga miedos profundamente arraigados. </p>
-                <p>Quizás eso explique por qué el terror se ha convertido en uno de los géneros cinematográficos más populares.</p>
-                <a href="#" class="button">Ir al diente <i class="fa-solid fa-angle-right"> </i></a>
+        <main>
+            <section class="contenedor_reg">
+                <h1>Iniciar sesión</h1>
+                    <form id="logInForm" action="">
+
+                            <label for="username" class="form-label">Cree su usuario</label>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Usuario">
+                            <div id="usernameError" class="error-message"></div>
+
+                            <label for="email" class="form-label">Escriba su email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            <div id="emailError" class="error-message"></div>
+
+                            <label for="password" class="form-label">Cree su contraseña</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" minlength="8" maxlength="15">
+                            <div id="passwordError" class="error-message"></div>
+                            <a href="#" class="olvidocontra">Olvido su contraseña?</a>
+
+                            <input type="submit" class="button_reg">
+                    </form>
             </section>
         </main>
 
@@ -69,42 +82,7 @@
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-        posicionarMenu();
-         
-        $(window).scroll(function() {    
-            posicionarMenu();
-        });
-         
-        function posicionarMenu() {
-            var altura_del_nav_top = $('.nav_top').outerHeight(true);
-            var altura_del_nav_main = $('.nav_main').outerHeight(true);
-         
-            if ($(window).scrollTop() >= altura_del_nav_top){
-                $('.nav_main').addClass('fixed');
-                $('body').css('margin-top', (altura_del_nav_main) + 'px');
-            } else {
-                $('.nav_main').removeClass('fixed');
-                $('body').css('margin-top', '0');
-            }
-        }
-        </script>
-
-
-
-
-
-
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myNavMain");
-              if (x.className === "nav_menu_right") {
-                x.className += " responsive";
-              } else {
-                x.className = "nav_menu_right";
-              }
-            }
-            </script>
+        <script src="../JS/data.js"></script>
     </body>
 
 </html>

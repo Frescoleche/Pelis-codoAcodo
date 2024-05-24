@@ -60,7 +60,10 @@
                 <p>Todo el mundo tiene miedo a algo, pueden ser arañas, serpientes o alturas, o algo menos tangible, como la muerte, el fracaso o lo desconocido.
                     Pero en el fondo, incluso el tipo más duro alberga miedos profundamente arraigados. </p>
                 <p>Quizás eso explique por qué el terror se ha convertido en uno de los géneros cinematográficos más populares.</p>
-                <a href="#" class="button">Ir al diente <i class="fa-solid fa-angle-right"> </i></a>
+
+                <div class="button">
+                    <input type="text" placeholder="Ir al diente..."> <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </section>
 
             <section class="contenedor_flou">
@@ -113,7 +116,6 @@
                     <h3>Friday 13</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elite.</p>
                 </div>
-
                 <div class="cards_fondo">
                     <a href="./pages/Pesadilla.html"><img src="./assets/img/Pelis/02_Nightmare.jpg" alt="Nightmare" loading="lazy"></a>
                     <h3>Nightmare</h3>
@@ -190,35 +192,7 @@
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-        posicionarMenu();
-         
-        $(window).scroll(function() {    
-            posicionarMenu();
-        });
-         
-        function posicionarMenu() {
-            var altura_del_nav_top = $('.nav_top').outerHeight(true);
-            var altura_del_nav_main = $('.nav_main').outerHeight(true);
-         
-            if ($(window).scrollTop() >= altura_del_nav_top){
-                $('.nav_main').addClass('fixed');
-                $('body').css('margin-top', (altura_del_nav_main) + 'px');
-            } else {
-                $('.nav_main').removeClass('fixed');
-                $('body').css('margin-top', '0');
-            }
-        }
-
-        function myFunction() {
-            var x = document.getElementById("myNavMain");
-            if (x.className === "nav_menu_right") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav_menu_right";
-            }
-        }
-        </script>
+        <script src="./JS/data.js"></script>
     </body>
 
 </html>
@@ -241,4 +215,33 @@
     <h6>No me digas</h6>
     <img src="./assets/img/Bohemian rhapsody.jpg" alt="Imagen de prueba" loading="lazy" width="150px">
 </main>
+
+JSON javascript API
+import org.json.JSONObject;
+
+public class Main {
+    public static void main(String[] args) {
+        // Convertir objeto a JSON
+        JSONObject obj = new JSONObject();
+        obj.put("Name", "John");
+        obj.put("Age", 30);
+        String json = obj.toString();
+        System.out.println(json);
+
+        // Convertir JSON a objeto
+        JSONObject newObj = new JSONObject(json);
+        System.out.println(newObj);
+    }
+}
+
+// Convertir objeto a JSON
+const obj = { Name: "John", Age: 30 };
+const json = JSON.stringify(obj);
+console.log(json);
+
+// Convertir JSON a objeto
+const newObj = JSON.parse(json);
+console.log(newObj);
+
+
 -->

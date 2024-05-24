@@ -177,9 +177,21 @@ header {
     transform: translate(0, 80px);
 }
 
+.button i{
+    padding: 10px;
+}
+
 .button:hover {
     background: var(--secundary-color);
     transition: .5s;
+}
+
+input {
+    padding: 10px;
+    outline: 0;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
 }
 
 .cont_tit {
