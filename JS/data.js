@@ -15,7 +15,7 @@ function posicionarMenu() {
         $('.nav_main').removeClass('fixed');
         $('body').css('margin-top', '0');
     }
-}
+};
 
 
 function myFunction() {
@@ -25,7 +25,7 @@ function myFunction() {
     } else {
         x.className = "nav_menu_right";
     }
-}
+};
 
 
 
