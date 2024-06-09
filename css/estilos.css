@@ -400,6 +400,26 @@ footer p {
     background: var(--primary-color);
 }
 
+.button_admin {
+    cursor: pointer;
+    display: flex;
+    background: var(--third-color);
+    color: var(--fourth-color);
+    border: none;
+    border-radius: 5px;
+    margin: 30px auto;
+    font-size: 1em;
+    font-weight: bold;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+}
+
+.button_admin:hover {
+    background: var(--secundary-color);
+    transition: .5s;
+}
 
 @keyframes latido {
     0%   {transform: none;}
