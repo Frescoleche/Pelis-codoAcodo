@@ -71,8 +71,6 @@ input {
     text-align: center;
 }
 
-
-
 .contenedor_flou {
     margin: 20px auto 80px;
     width: 80%;
@@ -82,27 +80,41 @@ input {
     text-align: center;
     margin-bottom: 1.5rem;
 }
-
-.galeria_flou {
+/*Carrousel*/
+.owl-container{
     width: 100%;
-    height: 40vh;    
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    height: 62vh; /* Altura inicial */
+    margin: 0 auto;
+    background-color: var(--third-color);
+    padding: 10px;
     border-radius: 10px;
-    border: var(--third-color) 1px solid;
-    scrollbar-color: var(--fourth-color) var(--third-color);
-    scrollbar-width: thin;
-    flex-shrink: 0;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.galeria_img {
-    object-fit: cover;
-    box-shadow: 0 5px 10px var(--fourth-color);
-    transform: scale(95%);
+.item{
+    height: 70%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
 }
+
+.item img{
+ 
+    object-fit: contain;
+    max-width: 100%;
+    transition: transform .8s, opacity .8s;
+    transform-origin: center;
+    opacity: 0.7;
+    
+}
+
+.item img:hover{
+    transform: scale(1.07); 
+    opacity: 1; 
+    border: var(--seventh-color) solid 2px;
+}
+/*Fin - Carrousel */
 
 .contenedor_titcards {
     width: 80%;
@@ -287,6 +299,10 @@ footer p {
     .contenedor {
         background-size: 150vw;
     }
+
+    .owl-container{
+        height: auto;
+    }
 }
 
 @media screen and (width <= 840px) {
@@ -301,12 +317,8 @@ footer p {
         text-align: center;
     }
 
-    .galeria_flou {
-        height: 35vh;    
-    }
-
-    .galeria_img {
-        transform: scale(95%);
+    .owl-container{
+        height: auto;
     }
 
     
@@ -327,7 +339,7 @@ footer p {
         display: none;
     }
 
-    .galeria_img {
-        transform: scale(75%);
+    .owl-container{
+        height: auto;
     }
 }
