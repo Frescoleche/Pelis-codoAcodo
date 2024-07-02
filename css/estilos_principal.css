@@ -39,10 +39,11 @@ h1 {
     color: var(--fourth-color);  
     font-size: clamp(2rem, 1.2996rem + 2.7004vw, 4rem);
     font-family: 'creepster';
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
-    color: var(--fourth-color);
+    color: var(--fifth-color);
     font-size: clamp(1.3rem, 1.0549rem + 0.9451vw, 2rem);
 }
 
@@ -58,7 +59,7 @@ h4 {
 }
 
 p {
-    color: var(--fourth-color);
+    color: var(--sixth-color);
     font-size: clamp(0.9rem, 0.865rem + 0.135vw, 1rem);
 }
 
@@ -234,7 +235,7 @@ header {
     .button{
         width: 60%;
     }
-    
+
     .nav_main_vampire {
         width: 200px;
     }
