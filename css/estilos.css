@@ -198,22 +198,6 @@ input {
     padding: 0 10px 20px 10px;
 }
 
-footer {
-    width: 80%;
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto 0;
-    border-top: var(--fourth-color) dashed 1px;
-}
-
-footer h4 {
-    padding-bottom: 10px;
-    }
-    
-footer p {
-    font-size: .7rem;
-}
-
 .contenedor_cont {
     width: 90%;
     height: 5vh;

@@ -21,8 +21,8 @@
             const cardBody = document.createElement('div');
             cardBody.classList.add('card-body');
 
-            const cardTitle = document.createElement('h5');
-            cardTitle.classList.add('h5');
+            const cardTitle = document.createElement('h3');
+            cardTitle.classList.add('h3');
             cardTitle.textContent = pelicula.title;
 
              // Añadir elementos a la tarjeta de película

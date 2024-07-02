@@ -151,6 +151,22 @@ header {
     top: 0px;
 }
 
+footer {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto 0;
+    border-top: var(--fourth-color) dashed 1px;
+}
+
+footer h4 {
+    padding-bottom: 10px;
+    }
+    
+footer p {
+    font-size: .7rem;
+}
+
 @keyframes latido {
     0%   {transform: none;}
     50%   {transform: scale(1.1);}
