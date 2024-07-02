@@ -38,13 +38,13 @@
     color: var(--fifth-color);
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     margin-bottom: 250px;
     font-size: 1em;
     font-weight: bold;
     text-align: center;
     justify-content: center;
-    width: 34%;
+    width: 35%;
     transform: translate(0, 80px);
 }
 
@@ -157,11 +157,11 @@ input {
 .cards_fondo:hover {
     background: var(--primary-color);
     transition: .8s;
-    border: var(--secundary-color) solid 1px;
+    border: var(--seventh-color) solid 1px;
 }
 
 .cards_fondo:hover > h3 {
-    color: var(--secundary-color);
+    color: var(--seventh-color);
     font-weight: bolder;
     font-family: 'creepster';
     transition: .8s;
@@ -235,7 +235,6 @@ footer p {
     display: inline-block;
     margin: auto;
     padding: 0;
-    text-align: center;
 }
 
 .contenedor_cont ul li a {
@@ -243,8 +242,8 @@ footer p {
     margin: auto;
     padding: 10px;
     justify-content: space-evenly;
-    background: var(--secundary-color);
-    color: var(--fourth-color);
+    background: var(--seventh-color);
+    color: var(--fifth-color);
     height: 25px;
     width: 30px;
     border: none;
@@ -258,7 +257,7 @@ footer p {
 }
 
 .contenedor_cont ul li a:hover {
-    border: var(--secundary-color) solid 1px;
+    border: var(--seventh-color) solid 1px;
     background: var(--primary-color);
 }
 
@@ -284,7 +283,8 @@ footer p {
 }
 
 .button_admin:hover {
-    background: var(--secundary-color);
+    background: var(--seventh-color);
+    color: var(--fifth-color);
     transition: .5s;
 }
 
@@ -315,6 +315,10 @@ footer p {
         justify-content: space-evenly;
         padding: 10px;
         text-align: center;
+    }
+
+    .button{
+        width: 60%;
     }
 
     .owl-container{
