@@ -151,6 +151,28 @@ header {
     top: 0px;
 }
 
+.button_reg {
+    cursor: pointer;
+    display: flex;
+    background: #aaaaaa;
+    color: #313131;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+}
+
+.button_reg:hover {
+    background: var(--seventh-color);
+    transition: .5s;
+    color: var(--sixth-color);
+}
+
 footer {
     width: 80%;
     text-align: center;
