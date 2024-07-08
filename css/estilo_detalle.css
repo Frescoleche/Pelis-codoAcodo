@@ -93,24 +93,17 @@ input[type=file]::file-selector-button {
     grid-column: 1/4;
 }
 
-
 .tabla_pelicula{
     margin-top: 20px;
     text-align: left;
     color: var(--fifth-color);
 }
 
-
-
 tbody th, td{
     margin-top: 20px;
     border-top: 1px solid var(--seventh-color);
     padding: 10px;
 }
-
-
-
-
 
 @media screen and (max-width: 1200px) {    
     .contenedor {
@@ -140,8 +133,6 @@ tbody th, td{
     tbody th, td {
         padding: 6px;
     }
-
-    
 
 }
 
