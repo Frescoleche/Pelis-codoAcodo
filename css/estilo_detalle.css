@@ -21,14 +21,10 @@
     position: relative;
     display: grid;
     margin-bottom: 40px;
+    margin-top: 60px;
 }
 
-.contenedor h1{
-    padding-bottom: 20px;
-    
-}
-
-.contenedor p{
+.contenedor h1, p{
     padding-bottom: 20px;
 }
 
@@ -97,14 +93,6 @@ input[type=file]::file-selector-button {
     grid-column: 1/4;
 }
 
-.contenedor_peliculas{
-    width: 90%;
-    margin: auto;
-    position: relative;
-    display: grid;
-    padding-top: 20px;
-}
-
 
 .tabla_pelicula{
     margin-top: 20px;
@@ -124,18 +112,37 @@ tbody th, td{
 
 
 
-@media screen and (width <= 1200px) {    
+@media screen and (max-width: 1200px) {    
     .contenedor {
         background-size: 150vw;
     }
+
+    tbody th, td {
+        padding: 8px;
+    }
 }
 
-@media screen and (width <= 840px) {
+@media screen and (max-width: 840px)  {
+    
+    .contenedor h1, p{
+        text-align: center;
+    }
     form {
         width: 100%;
         display: block;
         grid-gap: 30px;
     }
+
+    .tabla_pelicula {
+        text-align: center;
+    }
+
+    tbody th, td {
+        padding: 6px;
+    }
+
+    
+
 }
 
 

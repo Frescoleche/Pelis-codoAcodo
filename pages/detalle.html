@@ -30,7 +30,7 @@
                 <h1>Gestión de peliculas</h1>
                 <p>En esta sección se podra llevar a cabo la gestión de las peliculas del portal</p>
     
-                <form id="formNuevaPelicula" action="" method="post" enctype="multipart/form-data" class="row row-cols-lg-auto g-3 align-items-center">
+                <form id="formNuevaPelicula" action="" method="post" enctype="multipart/form-data">
                     <div>
                         <label for="titulo" class="form_detalle">Titulo</label>
                         <input class="form_grid" type="text" name="titulo" id="titulo">
@@ -56,9 +56,8 @@
             </section>
             <hr>
             <!--aca se van a mostrar las peliculas y las acciones modificar y dar de baja-->
-            <section class="contenedor_peliculas">
+            <section class="contenedor">
                 <h1>Listado de Peliculas</h1>
-                
                 <p>Para ver todos los datos de las peliculas, elija una y toque modificar</p>
                 <table class="tabla_pelicula" id="tablePeliculas">
                     <thead>
