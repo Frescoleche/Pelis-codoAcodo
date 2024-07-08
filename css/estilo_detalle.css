@@ -24,7 +24,12 @@
 }
 
 .contenedor h1{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    
+}
+
+.contenedor p{
+    padding-bottom: 20px;
 }
 
 form {
@@ -95,14 +100,27 @@ input[type=file]::file-selector-button {
 .contenedor_peliculas{
     width: 90%;
     margin: auto;
-    color: var(--fifth-color);
     position: relative;
     display: grid;
+    padding-top: 20px;
 }
+
 
 .tabla_pelicula{
     margin-top: 20px;
+    text-align: left;
+    color: var(--fifth-color);
 }
+
+
+
+tbody th, td{
+    margin-top: 20px;
+    border-top: 1px solid var(--seventh-color);
+    padding: 10px;
+}
+
+
 
 
 
